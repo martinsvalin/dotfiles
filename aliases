@@ -1,0 +1,21 @@
+# Git
+alias git="hub"
+alias gp="git pull --rebase"
+alias gl="git r"
+alias gd="git diff"
+alias gr="git unpushed"
+alias gc="git checkout"
+alias gs="git status -sb"
+alias gb="git branch"
+alias ga="git add"
+alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+
+# Ruby
+alias testbot='bundle exec rake testbot:rspec 2>&1 | tee tmp/output.txt | grep "^\(Finished.*\.$\|rspec\|[0-9]\+ examples\)"'
+alias z="zeus"
+alias b="bundle exec"
+
+# Misc
+alias ll="ls -la"
+alias flushdns='dscacheutil -flushcache'
+alias redis-start="redis-server /usr/local/etc/redis.conf"
