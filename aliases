@@ -19,3 +19,4 @@ alias b="bundle exec"
 alias ll="ls -la"
 alias flushdns='dscacheutil -flushcache'
 alias redis-start="redis-server /usr/local/etc/redis.conf"
+alias solr='cd ~/Code/solr && ./start.sh'
