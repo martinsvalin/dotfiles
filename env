@@ -1,3 +1,4 @@
+#!/bin/bash
 export EDITOR="subl -a -w"
 export GEM_EDITOR=$EDITOR
 export CLICOLOR=true

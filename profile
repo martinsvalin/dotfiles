@@ -1,3 +1,5 @@
+#!/bin/bash
+
 DOTFILES=$HOME/dotfiles
 
 source $DOTFILES/prompt

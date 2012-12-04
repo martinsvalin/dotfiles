@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Git
 alias git="hub"
 alias gp="git pull --rebase"
