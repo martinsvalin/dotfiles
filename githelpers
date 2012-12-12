@@ -27,7 +27,7 @@ show_git_head() {
 pretty_git_log() {
     git log --graph --pretty="tformat:${FORMAT}" $* |
         # Fix Jesper Röjeståls weird charset changes
-        LANG=C sed -Ee 's/ R[^}]+l//' |
+        LANG=C sed -Ee 's/Jesper R[^}]+l/Jesper Rojestal/' |
         # shorten_relative_time |
         # Line columns up based on } delimiter
         column -s '}' -t |
