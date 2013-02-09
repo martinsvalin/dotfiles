@@ -1,11 +1,7 @@
-#!/bin/bash
-
-DOTFILES=$HOME/dotfiles
-
-source $DOTFILES/prompt
-source $DOTFILES/rbenv
-source $DOTFILES/ruby-perf
-source $DOTFILES/mnd
-source $DOTFILES/path
-source $DOTFILES/env
-source $DOTFILES/aliases
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
