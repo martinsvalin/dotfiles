@@ -1,4 +1,6 @@
 #!/bin/bash
+source $HOME/dotfiles/git-prompt.sh
+
 WHITE="\[\033[0;38m\]"
 RED="\[\033[0;31m\]"
 BLUE="\[\033[0;34m\]"
@@ -8,17 +10,11 @@ GREEN="\[\033[0;32m\]"
 CYAN="\[\033[0;36m\]"
 NO_COLOUR="\[\033[0m\]"
 
-
-# Git bransch on prompt
-function git_branch {
-  ref=$(git symbolic-ref HEAD 2> /dev/null)
-  if [ $ref ]; then
-    echo " "${ref#refs/heads/}
-  fi
-}
+function git_branch { __git_ps1 " %s"; }
 
 DATE="$CYAN\$(date +%H:%M)"
 SHORTPATH="$YELLOW\W"
 GIT_BRANCH="$CYAN\$(git_branch)"
 
+export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="$DATE $SHORTPATH$GIT_BRANCH$NO_COLOUR "
