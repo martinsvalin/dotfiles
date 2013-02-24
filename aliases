@@ -14,7 +14,7 @@ alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 # Ruby
 alias testbot='bundle exec rake testbot:rspec 2>&1 | tee tmp/output.txt | grep "^\(Finished.*\.$\|rspec\|[0-9]\+ examples\)"'
-alias z="zeus"
+alias s="spring"
 alias b="bundle exec"
 
 # Misc
