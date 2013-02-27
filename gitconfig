@@ -32,6 +32,7 @@
   undeployed = !git log `git tag|grep production|tail -n 1`..HEAD
   #graph = log --oneline --decorate --graph
   wc = whatchanged -p --abbrev-commit --pretty=medium
+  vaska = reset --hard
 
   # Divergence (commits we added and commits remote added)
   div = divergence
