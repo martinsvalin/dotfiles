@@ -1,20 +1,21 @@
 #!/bin/bash
 source $HOME/dotfiles/git-prompt.sh
 
-WHITE="\[\033[0;38m\]"
-RED="\[\033[0;31m\]"
-BLUE="\[\033[0;34m\]"
-PURPLE="\[\033[0;35m\]"
-YELLOW="\[\033[0;33m\]"
-GREEN="\[\033[0;32m\]"
-CYAN="\[\033[0;36m\]"
-NO_COLOUR="\[\033[0m\]"
+WHITE="\033[0;38m"
+RED="\033[0;31m"
+BLUE="\033[0;34m"
+PURPLE="\033[0;35m"
+YELLOW="\033[0;33m"
+GREEN="\033[0;32m"
+CYAN="\033[0;36m"
+NO_COLOUR="\033[0m"
 
-function git_branch { __git_ps1 " %s"; }
+function git_branch { __git_ps1 "%s"; }
 
 DATE="$CYAN\$(date +%H:%M)"
 SHORTPATH="$YELLOW\W"
+SEPARATOR="$NO_COLOUR:"
 GIT_BRANCH="$CYAN\$(git_branch)"
 
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="$DATE $SHORTPATH$GIT_BRANCH$NO_COLOUR "
+export PS1="$DATE $SHORTPATH$SEPARATOR$GIT_BRANCH$NO_COLOUR "
