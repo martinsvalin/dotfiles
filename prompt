@@ -11,7 +11,7 @@ CYAN="\[\033[0;36m\]"
 NO_COLOUR="\[\033[0m\]"
 
 function git_branch { __git_ps1 "%s"; }
-function iterm_title { echo -ne "\033]0;$1\007"; }
+function iterm_title { echo -ne "\033]0;$@\007"; }
 
 DATE="$CYAN\A"
 INVADER=$'\xf0\x9f\x91\xbe\0a'$' '
