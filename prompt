@@ -21,5 +21,6 @@ SEPARATOR="$NO_COLOUR:"
 GIT_BRANCH="$CYAN\$(git_branch)"
 
 export GIT_PS1_SHOWDIRTYSTATE=1
+trap 'iterm_title $BASH_COMMAND' DEBUG
 export PROMPT_COMMAND='iterm_title ${PWD##*/}$(__git_ps1 :%s)'
 export PS1="$DATE $SHORTPATH$SEPARATOR$GIT_BRANCH $ENDING"
