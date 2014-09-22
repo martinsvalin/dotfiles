@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH=bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH=bin:$HOME/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH
