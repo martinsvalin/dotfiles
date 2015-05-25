@@ -15,8 +15,9 @@ function iterm_title { echo -ne "\033]0;$@\007"; }
 
 DATE="$CYAN\A"
 TWO_MEN_HOLDING_HANDS=$'\xf0\x9f\x91\xac\0a'$' '
+MONEY_WITH_WINGS=$'\xF0\x9F\x92\xB8\0a'$' '
 INVADER=$'\xf0\x9f\x91\xbe\0a'$' '
-ENDING="$NO_COLOUR$TWO_MEN_HOLDING_HANDS "
+ENDING="$NO_COLOUR$MONEY_WITH_WINGS "
 SHORTPATH="$YELLOW\W"
 SEPARATOR="$NO_COLOUR:"
 GIT_BRANCH="$CYAN\$(git_branch)"
