@@ -1,4 +1,4 @@
 #!/bin/bash
-export EDITOR="subl -a -w"
-export BUNDLER_EDITOR="subl -a"
+export EDITOR="sublime -a -w"
+export BUNDLER_EDITOR="sublime -a"
 export CLICOLOR=true
