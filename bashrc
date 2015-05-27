@@ -9,3 +9,5 @@ source $DOTFILES/path
 source $DOTFILES/env
 source $DOTFILES/aliases
 source $DOTFILES/git-completion.bash
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
