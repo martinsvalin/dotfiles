@@ -2,7 +2,6 @@
 
 # Git
 alias g=git
-alias git="hub"
 alias gp="git pull --rebase"
 alias gl="git r"
 alias gd="git diff"
