@@ -1,5 +1,6 @@
 [core]
   excludesfile = /Users/martin/.gitignore
+	editor = atom --wait
 [user]
   name = Martin Svalin
   email = martin@lite.nu
@@ -65,3 +66,7 @@
 	enabled = 1
 [remote "origin"]
 	prune = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
