@@ -4,6 +4,7 @@
 [user]
   name = Martin Svalin
   email = martin@lite.nu
+  useconfigonly = true
 [diff]
 [color]
   ui = auto
